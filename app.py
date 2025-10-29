@@ -8,7 +8,7 @@ import datetime
 st.set_page_config(page_title="🌿 AI Plantation App", layout="centered")
 
 st.title("🌿 AI-Powered Plantation Management App")
-st.caption("Developed by Students | Guided by Faculty")
+st.caption("Developed by Johnson Paul | Guided by Dr.T.Venkateswarlu")
 
 tab1, tab2 = st.tabs(["Plant Health Detection", "Watering Time Prediction"])
 
@@ -40,3 +40,4 @@ with tab2:
         next_time = datetime.datetime.now() + datetime.timedelta(hours=pred_hours)
         st.info(f"Next watering in {round(pred_hours,1)} hours ({next_time.strftime('%I:%M %p')})")
         st.balloons()
+
